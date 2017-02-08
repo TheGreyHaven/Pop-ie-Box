@@ -4,12 +4,21 @@ body {
 }
 
 /*header*/
-.navbar-brand {
+.navbar-brand{
 	font-family: 'Paytone One', sans-serif;
 	font-size: 300%;
 	line-height: 100%;
 	height: 0%;
 	padding-bottom: 0px;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+	color: #ffffff;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -22,16 +31,6 @@ body {
 	position: relative;
 }
 
-/*.navbar-toggle {
-    float: right;
-    padding: 9px 10px;
-    margin-top: 17px;
-    margin-right: 4%;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: none;
-}*/
 
 a.dropdown-toggle {
 	text-align: center;
@@ -39,10 +38,8 @@ a.dropdown-toggle {
 	font-size: 140%
 }
 
-#colorDots>ul {
-	list-style-type: none;
-}
 
+/*color choice dots*/
 #orange {
 	width: 15px;
 	height: 15px;
@@ -52,7 +49,7 @@ a.dropdown-toggle {
 	border-radius: 50px;
 	position: absolute;
 	top: 81px;
-	left: 630%;
+	right: 31%;
 }
 #red {
 	width: 15px;
@@ -63,9 +60,80 @@ a.dropdown-toggle {
 	border-radius: 50px;
 	position: absolute;
 	top: 81px;
-	left: 580%;
+	right: 33%;
 }
+#pink {
+	width: 15px;
+	height: 15px;
+	background: #eeaed1;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 81px;
+	right: 35%;
+}
+#violet {
+	width: 15px;
+	height: 15px;
+	background: #cd99d8;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 81px;
+	right: 37%;
+}
+#blue {
+	width: 15px;
+	height: 15px;
+	background: #99ccd8;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 81px;
+	right: 39%;
+}
+#green {
+	width: 15px;
+	height: 15px;
+	background: #b8ddbb;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 81px;
+	right: 41%;
+}
+#yellow {
+	width: 15px;
+	height: 15px;
+	background: #fadd66;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 81px;
+	right: 43%;
+}
+#white {
+	width: 15px;
+	height: 15px;
+	background: #ffffff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 81px;
+	right: 45%;
+}
+/*/color choice dots*/
 
+/*/header*/
+/*main content*/
+
+/*/main content*/
 
 /* Extra small less than 768px */
 @media (max-width: 767px) {
@@ -89,7 +157,7 @@ a.dropdown-toggle {
 
 	#seasons {
 		position: absolute;
-		right: 18%;
+		right: 17%;
 		top: 65px;
 	}
 	
