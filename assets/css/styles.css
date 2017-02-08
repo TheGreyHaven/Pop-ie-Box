@@ -6,11 +6,13 @@ body {
 /*header*/
 .navbar-brand{
 	font-family: 'Paytone One', sans-serif;
+	font-family: 'Gravitas One', cursive;
 	font-size: 300%;
 	line-height: 100%;
 	height: 0%;
 	padding-bottom: 0px;
 	color: #ffffff;
+	text-shadow: 3px 3px #fadd66;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -31,13 +33,61 @@ body {
 	position: relative;
 }
 
+.nav>li>a {
+	padding: 8px;
+}
 
+#seasons > a, #seasons > a:visited, #flowers > a, #flowers > a:visited {
+	color: #99ccd8;
+}
+
+
+#seasons > a:hover, #flowers > a:hover {
+	color: #f8cacd;
+}
+
+/*the background visited menu*/
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: #eeaed1;
+}
+
+
+/*sm, md, lg menu */
 a.dropdown-toggle {
 	text-align: center;
 	font-family: 'Unica One', cursive;
-	font-size: 140%
+	font-size: 160%;
 }
 
+/*sm, md, lg menu dropdown items*/
+.dropdown-menu > li > a:hover {
+	color: #eeaed1;
+}
+
+.dropdown-menu {
+	min-width: 100%;
+	background-color: #eeaed1;
+	border: none;
+	border-radius: 0px;
+}
+
+/*sm, md, lg menu dropdown items*/
+.dropdown-menu > li > a, .dropdown-menu > li > a:visited {
+	color: #fadd66;
+	font-family: 'Unica One', cursive;
+	font-size: 100%;
+}
+
+/* xs toggled menu items inside dropdown*/
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: #ffffff;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: #eeaed1;
+}	
+/* /xs toggled menu items inside dropdown */
 
 /*color choice dots*/
 #orange {
@@ -137,28 +187,31 @@ a.dropdown-toggle {
 
 /* Extra small less than 768px */
 @media (max-width: 767px) {
-	
+	#seasons > a, #seasons > a:visited, #flowers > a, #flowers > a:visited, #colors > a, #colors > a:visited {
+	color: #ffffff;
+	}
+	#seasons > a:hover, #flowers > a:hover, #colors > a:hover {
+		color: #fadd66;
+	}
 	
 }
 
 /* Small devices 768px- 991px */
 @media (min-width: 768px) {
-	#colorsDots {
-		position: absolute;
-		right: 31%;
-		top: 65px;
-	}
+	
 
 	#flowers {
 		position: absolute;
 		right: 5%;
 		top: 65px;
+		background-color: #fadd66;
 	}
 
 	#seasons {
 		position: absolute;
-		right: 17%;
+		right: 18%;
 		top: 65px;
+		background-color: #ffffff;
 	}
 	
 
