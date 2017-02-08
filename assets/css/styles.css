@@ -57,6 +57,7 @@ a.dropdown-toggle {
 	text-align: center;
 	font-family: 'Unica One', cursive;
 	font-size: 160%;
+
 }
 
 /*sm, md, lg menu dropdown items*/
@@ -86,8 +87,29 @@ a.dropdown-toggle {
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
 	color: #eeaed1;
+}
+
+.navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+	padding: 5px 15px 5px 15px;
 }	
 /* /xs toggled menu items inside dropdown */
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 200%;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus   {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+	color: #fadd66;
+	background-color: transparent;
+}
 
 /*color choice dots*/
 #orange {
@@ -203,14 +225,14 @@ a.dropdown-toggle {
 	#flowers {
 		position: absolute;
 		right: 5%;
-		top: 65px;
+		top: 60px;
 		background-color: #fadd66;
 	}
 
 	#seasons {
 		position: absolute;
 		right: 18%;
-		top: 65px;
+		top: 60px;
 		background-color: #ffffff;
 	}
 	
