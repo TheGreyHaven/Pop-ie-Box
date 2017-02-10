@@ -208,37 +208,78 @@ button {
 /*main content*/
 
 .container-fluid {
-	padding-left: 0px;
-	margin-left: 0px;
-	padding-right: 5%;
 	position: relative;
+	margin: 0% 1% 0% 1%;
 }
 
 #canvas {
 	height: 30vw;
-	width: 65vw;
+	width: 75%;
 	background-color: #ffffff;
 	float: left;
 	box-shadow: 4px 4px #fadd66;
+	margin-left: -3%;
 }
 
 #flowerList {
 	height: 30vw;
-	width: 28vw;
-	background-color: #ffffff;
+	width: 25%;
+	background-color: #b8ddbb;
+	color: #ffffff;
 	float: right;
 	box-sizing: border-box;
 	box-shadow: 4px 4px #fadd66;
 }
-#box1, #box2, #box3 {
-	background-color: red;
-	margin: 4% 2%;
-	height: 20vw;
 
+
+#boxes {
+	height: 20vw;
+	width: 80%;
+	position: relative;
+	margin-top: 5%;
+}
+
+#box1, #box2, #box3, #box4 {
+	background-color: #ffffff;
+	width: 20%;
+	height: 18vw;
+	top: 2.5%;
+	position: absolute;
 }
 
 #box1 {
-	margin-left: 11%;
+	left: 5%;
+	box-shadow: 4px 4px #fa1c0e;
+}
+
+#box2 {
+	left: 28.5%;
+	box-shadow: 4px 4px #fadd66;
+}
+#box3 {
+	right: 28.5%;
+	box-shadow: 4px 4px #b8ddbb;
+}
+
+#box4 {
+	right: 5%;
+	box-shadow: 4px 4px #99ccd8;
+}
+
+#lArrow {
+	position: absolute;
+	top: 45%;
+	font-size: 200%;
+	left: 0%;
+	color: #ffffff;
+}
+
+#rArrow {
+	position: absolute;
+	top: 45%;
+	font-size: 200%;
+	right: 0%;
+	color: #ffffff;
 }
 
 /*/main content*/
@@ -250,6 +291,51 @@ button {
 	}
 	#seasons > a:hover, #flowers > a:hover, #colors > a:hover {
 		color: #fadd66;
+	}
+
+	#canvas {
+		height: 60vw;
+		width: 76%;
+		margin-left: 12%;
+	}
+
+	#flowerList {
+		height: 28vw;
+		width: 70%;
+		position: absolute;
+		left: 15%;
+		top: 160%;
+	}
+
+	#box1 {
+		left: 15%;
+		width: 30%;
+		height: 27vw;
+		top: -3%;
+		box-shadow: 4px 4px #fadd66;
+	}
+
+	#box4 {
+		right: 15%;
+		width: 30%;
+		height: 27vw;
+		top: -3%;
+		box-shadow: 4px 4px #fadd66;
+	}
+	#lArrow {
+		position: absolute;
+		top: 50%;
+		font-size: 150%;
+		left: 5%;
+		color: #ffffff;
+	}
+
+	#rArrow {
+		position: absolute;
+		top: 50%;
+		font-size: 150%;
+		right: 5%;
+		color: #ffffff;
 	}
 
 }
