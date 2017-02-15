@@ -59,10 +59,10 @@
             <li class="dropdown" id="flowers">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flowers</a>
               <ul class="dropdown-menu">
-                <li><a href="#">Spring</a></li>
-                <li><a href="#">Summer</a></li>
-                <li><a href="#">Autumn</a></li>
-                <li><a href="#">Winter</a></li>
+                <li><a href="#">Crispedia</a></li>
+                <li><a href="#">Peony</a></li>
+                <li><a href="#">Fern</a></li>
+                <li><a href="#">Lilac</a></li>
               </ul>
             </li>
           </ul>
@@ -72,16 +72,18 @@
   </header>
   <!-- main content -->
   <div class="container-fluid">
-    <div id="canvas">
+    <div id="canvas" ondrop="drag_drop(event)" 
+         ondragover="return false">
     </div>
-    <div id="flowerList">
+    <div id="flowerList">Your Flowers:
     </div>
   </div><!-- /container-fluid -->
   <div id="boxes" class="container">
-      <div id="box1"></div>
-      <div class="hidden-xs" id="box2"></div>
-      <div class="hidden-xs" id="box3"></div>
-      <div id="box4"></div>
+      <div id="box1"><img src="assets/images/Craspedia300px.png" alt="craspedia image" id="flower1" class="flower" draggable="true" ondragstart="drag_start(event)">
+      </div>
+      <div class="hidden-xs" id="box2"><img src="assets/images/eucalyptus300.png" alt="eucalyptus image" id="flower2" class="flower" draggable="true" ondragstart="drag_start(event)"></div>
+      <div class="hidden-xs" id="box3"><img src="assets/images/Craspedia300px.png" alt="craspedia image" id="flower3" class="flower" draggable="true" ondragstart="drag_start(event)"></div>
+      <div id="box4"><img src="assets/images/Craspedia300px.png" alt="craspedia image" id="flower4"  class="flower" draggable="true" ondragstart="drag_start(event)"></div>
       <span id="lArrow" class="glyphicon glyphicon-triangle-left"></span>
     <span id="rArrow" class="glyphicon glyphicon-triangle-right"></span>
   </div> <!-- /.container -->

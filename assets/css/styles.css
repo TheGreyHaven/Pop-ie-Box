@@ -220,6 +220,9 @@ button {
 	box-shadow: 4px 4px #fadd66;
 	margin-left: -3%;
 }
+#canvas > .flower {
+	height: 50%;
+}
 
 #flowerList {
 	height: 30vw;
@@ -229,6 +232,10 @@ button {
 	float: right;
 	box-sizing: border-box;
 	box-shadow: 4px 4px #fadd66;
+	text-align: center;
+	padding: 2%;
+	font-family: 'Unica One', cursive;
+	font-size: 130%; 
 }
 
 
@@ -280,6 +287,11 @@ button {
 	font-size: 200%;
 	right: 0%;
 	color: #ffffff;
+}
+
+#flower1, #flower2, #flower3, #flower4 {
+	height: 100%;
+	display: inline-block;
 }
 
 /*/main content*/
@@ -368,6 +380,27 @@ button {
 
 /* Large devices  1200 and up */
 @media (min-width: 1200px) {
+	#boxes {
+	margin-top: 1%;
+	max-width: 1000px;
+	max-height: 220px; 
+	}
+
+	#canvas {
+		max-height: 320px;
+
+		}
+
+	#flowerList {
+		max-height: 320px;
+		max-width: 300px;
+	}
+	#box1, #box2, #box3, #box4 {
+		max-height: 200px;
+		max-width: 175px;
+	}
 	
-	
-}	
+}
+
+
+
