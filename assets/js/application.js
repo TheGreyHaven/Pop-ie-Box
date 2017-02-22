@@ -30,15 +30,6 @@ $(document).ready(function(){
 
 // color, season and flower type selectors
 	// $("#colorList > li").on('click', function(){
-	$("#colorList > a").each(
-    function() {
-        var classes = this.classList;
-           if ($('#boxes img').hasClass(classes)){
-                $(this).addClass('hidden');
-            }
-        
-    });​
-
 	
 
 
